@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="trainings-portal">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trainings-Portal</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- JS -->
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./libs/angular/angular.js"></script>
+    <script src="./libs/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- Angular Custom -->
+    <script src="./js/app.js"></script>
+    <script src="./js/constants.js"></script>
+    
+    <!-- <script src="./js/services/tickets.service.js"></script> -->
+    <script src="./js/services/authentication.service.js"></script>
+
+    <!-- <script src="./js/controller/open.controller.js"></script> -->
+    <!-- <script src="./js/controller/archive.controller.js"></script> -->
+    <script src="./js/controller/app.controller.js"></script>
+    <script src="./js/controller/authentication.controller.js"></script>
+    <script src="./js/controller/signup.controller.js"></script>
+    <script src="./js/controller/dashboard.controller.js"></script>
+
+    <script src="./js/directives/pageHeader.directive.js"></script>
+  </head>
+  <body ng-controller="AppController">
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div ui-view></div>
+    </div>
+  </body>
+</html>

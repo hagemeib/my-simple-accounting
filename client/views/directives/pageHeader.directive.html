@@ -1,0 +1,25 @@
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation" ng-controller="AuthenticationController">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="dashboard" ><span class="fa fa-child"></span> Trainings-Portal</a>
+    </div>
+    <div class="" ng-show="isOutside()">
+      <span>Login to your account</span>
+      <span>
+        <label class="item item-input">
+            <input type="text" placeholder="Email" ng-model="User.email">
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="Password" ng-model="User.password">
+        </label>
+      </span>
+      <button class="btn btn-primary" ng-click="login()">Login</button>
+    </div>
+    <div class="" ng-hide="isOutside()">
+      <h1>Inside</h1>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a ui-sref="dashboard"><span class="fa fa-home"></span> Home</a></li>
+      <li ng-hide="isOutside()"><a href ng-click="logout()"><span class="fa fa-sign-out"></span> Logout</a></li>
+    </ul>
+</nav>

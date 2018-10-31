@@ -1,0 +1,23 @@
+{
+  "name": "trainings-portal",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/server.js",
+    "devstart": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "eslint": "^4.18.2",
+    "express": "^4.16.2",
+    "jwt-simple": "^0.5.1",
+    "mongoose": "^5.0.9",
+    "morgan": "^1.9.0",
+    "npm": "^5.7.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}

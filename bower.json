@@ -1,0 +1,11 @@
+{
+  "name": "angular-walkthrough",
+  "version": "1.0.0",
+  "dependencies": {
+    "font-awesome": "latest",
+    "angular": "latest",
+    "bootstrap": "latest",
+    "angular-ui-router": "0.4.2",
+    "jquery":"latest"
+  }
+}
